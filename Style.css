@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scrollbar-width: none;
+}
+.main{
+    padding-top:55px;
+}
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+header .navbar-FD{
+    background-color: rgb(241, 179, 7);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.navbar-FD ul{
+    display: flex;
+    justify-content: right;
+}
+.navbar-FD ul li{
+    list-style: none;
+    margin:0 20px;
+}
+.navbar-FD ul li a{
+    text-decoration: none;
+    color: white;
+    background-color: rgb(241, 92, 38);
+    padding: 5px;
+    border-radius: 10px;
+}
+.navbar-FD ul li a:hover{
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.522);
+}
+.navbar-FD #search{
+    border: none;
+    outline: none;
+    padding: 0 10px;
+    border-radius: 20px;
+    font-size: 0.6rem;
+    color:rgb(241, 92, 38) ;
+}
+section{
+    padding: 0 100px;
+}
+section .FD-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 20px;
+}
+section .FD-card{
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.455);
+    font-size: 0.7rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+
+}
+section .FD-card .FD-img{
+    overflow: hidden;
+    width: 200px;
+    aspect-ratio: 1/1;
+    
+}
+section .FD-card .FD-body button{
+    border:none;
+    background-color: rgb(241, 92, 38);
+    color:white;
+    padding: 5px;
+    font-size: 0.6rem;
+    font-weight: bold;
+    border-radius: 5px;
+    margin: 5px 0;
+}
+
+
+.FD-container .FD-card  .FD-img img{
+    width: 100%;
+    transition: all 0.5s;
+}
+section .FD-card:hover .FD-img img{
+    transform: scale(1.2);
+}
+.sidebar {
+    background-color: rgb(255, 255, 255);
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: none;
+    width: 20%;
+    height: 100vh;
+    padding: 10px;
+    border-left: 1px solid  rgb(241, 179, 7);
+    overflow: auto;
+    scrollbar-width: none;
+}
+
+.sidebar div i{
+    color: rgb(241, 179, 7);
+}
+.sidebar div i:hover{
+    color:orangered
+}
+.sample .FD-card:hover .FD-img img{
+    transform: scale(1.1);
+}
+.sample .FD-card .FD-img img{
+    width: 100px;
+    aspect-ratio: 1/1;
+    transition: all 0.3s;
+}
+.sample{
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+}
+.navbar-FD div div{
+    color:rgb(255, 115, 0);
+    background-color: white;
+    padding:2px 5px;
+    border-radius: 50%;
+    position: relative;
+}
+.navbar-FD div div:hover{
+    box-shadow: 1px 1px 5px black;
+}
+.navbar-FD div div .qty{
+    position: absolute;
+    right:-4px;
+    top:-4px;
+    font-size: 0.6rem;
+    padding: 0 4px;
+    background-color: white;
+    color: rgb(233, 65, 8);
+    border-radius: 50%;
+}

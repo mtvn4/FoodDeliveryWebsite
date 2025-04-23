@@ -46,7 +46,7 @@ const Products=[
     },
     {
         id:7,
-        src:"images/EggNoodles.Webp",
+        src:"images/EggNoodles.webp",
         name:"EggNoodles",
     },
     {

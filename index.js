@@ -81,7 +81,7 @@ const Products=[
     },
     {
         id:14,
-        src:"images/VegNoodles.jpg",
+        src:"images/vegNoodles.jpg",
         name:"VegNoodles",
     },
     
